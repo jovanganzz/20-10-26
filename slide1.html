@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide 1 - Playlist & Cerita untuk Ara 🎧</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #fff0f5;
+      background-image: radial-gradient(circle at 10% 20%, rgba(251, 113, 133, 0.15) 0%, transparent 40%),
+                        radial-gradient(circle at 90% 80%, rgba(225, 29, 72, 0.15) 0%, transparent 40%);
+      font-family: 'Fredoka', sans-serif;
+      padding-bottom: 90px;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      border: 2px solid #fecdd3;
+      box-shadow: 0 10px 25px rgba(244, 63, 94, 0.1);
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-800 p-4 sm:p-6 flex flex-col items-center">
+
+  <div class="max-w-xl w-full space-y-6">
+    
+    <!-- Title -->
+    <header class="text-center space-y-2">
+      <span class="px-4 py-1 rounded-full bg-pink-100 text-pink-600 text-xs font-bold">Slide 1 dari 4 🎀</span>
+      <h1 class="text-3xl font-bold text-pink-600">Makna Musik & Latar Belakang 🎵</h1>
+      <p class="text-xs text-slate-500">Putar musiknya sambil baca makna di bawahnya yaa...</p>
+    </header>
+
+    <!-- 6 MUSIC PLAYLIST SECTION -->
+    <div class="space-y-4">
+      
+      <!-- Song 1 -->
+      <div class="glass-card rounded-2xl p-4 flex flex-col space-y-3">
+        <div class="flex items-center gap-3">
+          <img src="araa3.png" alt="Fix You" class="w-14 h-14 rounded-xl object-cover border-2 border-pink-300" onerror="this.src='https://via.placeholder.com/100/ffe4e6/be123c?text=Fix+You'">
+          <div class="flex-1">
+            <h3 class="font-bold text-pink-700 text-base">1. Fix You - Coldplay</h3>
+            <p class="text-xs text-slate-500">Sembuhkan trauma bersama ✨</p>
+          </div>
+          <button onclick="playSong('audio1')" class="px-3 py-2 bg-pink-500 text-white rounded-xl text-xs font-bold hover:bg-pink-600 active:scale-95">▶ Play</button>
+        </div>
+        <audio id="audio1" src="fix you.mp3"></audio>
+        <div class="bg-pink-50 p-3 rounded-xl border border-pink-200 text-xs leading-relaxed text-slate-700">
+          inii lagu punya makna yang dalemm buat kamuu. berisi makna yang intinya aku pengennn bangett buat pulihin semua rasa trauma, trust issue yang pernah kamuu miliki. disini akuu bakal jagainn bangettt kamu dari semua rasa sakit yang pernah kamu terima sebelumnya. 🫂
+        </div>
+      </div>
+
+      <!-- Song 2 -->
+      <div class="glass-card rounded-2xl p-4 flex flex-col space-y-3">
+        <div class="flex items-center gap-3">
+          <img src="araa5.png" alt="You! LANY" class="w-14 h-14 rounded-xl object-cover border-2 border-pink-300" onerror="this.src='https://via.placeholder.com/100/ffe4e6/be123c?text=You!+LANY'">
+          <div class="flex-1">
+            <h3 class="font-bold text-pink-700 text-base">2. You! - LANY</h3>
+            <p class="text-xs text-slate-500">Lagu idol kamu 💖</p>
+          </div>
+          <button onclick="playSong('audio2')" class="px-3 py-2 bg-pink-500 text-white rounded-xl text-xs font-bold hover:bg-pink-600 active:scale-95">▶ Play</button>
+        </div>
+        <audio id="audio2" src="youuu.mp3"></audio>
+        <div class="bg-pink-50 p-3 rounded-xl border border-pink-200 text-xs leading-relaxed text-slate-700 italic">
+          of courseee ini laguu bakal aku taruhh banget di kamuu, selain lagu ini juga buatan idol kamu, lagu ini juga menggambarkan sosok dirimuu seperti liriknyaa:<br>
+          <strong class="text-pink-600 font-bold">"You're the sun to the moon, You're my ocean, painted blue, You, I'm nothing without you"</strong>
+        </div>
+      </div>
+
+      <!-- Song 3 -->
+      <div class="glass-card rounded-2xl p-4 flex flex-col space-y-3">
+        <div class="flex items-center gap-3">
+          <img src="araa12.png" alt="Drop Dead" class="w-14 h-14 rounded-xl object-cover border-2 border-pink-300" onerror="this.src='https://via.placeholder.com/100/ffe4e6/be123c?text=Drop+Dead'">
+          <div class="flex-1">
+            <h3 class="font-bold text-pink-700 text-base">3. Drop Dead - Olivia Rodrigo</h3>
+            <p class="text-xs text-slate-500">Momen rasa terharu 🥺</p>
+          </div>
+          <button onclick="playSong('audio3')" class="px-3 py-2 bg-pink-500 text-white rounded-xl text-xs font-bold hover:bg-pink-600 active:scale-95">▶ Play</button>
+        </div>
+        <audio id="audio3" src="dropdead.mp3"></audio>
+        <div class="bg-pink-50 p-3 rounded-xl border border-pink-200 text-xs leading-relaxed text-slate-700">
+          laguu yang bisa bikinn aku bangga. ketika waktu itu kamuu post tentang akuu pakai sound ini, disitulah aku kayakk ngerasa terharuuu 🥺, akhirnya aku bisa dapetin wanita yang bisa menghargai akuu dan bangga punyaaa seorang diriku. 😊
+        </div>
+      </div>
+
+      <!-- Song 4 -->
+      <div class="glass-card rounded-2xl p-4 flex flex-col space-y-3">
+        <div class="flex items-center gap-3">
+          <img src="araa10.png" alt="You Are Not Alone" class="w-14 h-14 rounded-xl object-cover border-2 border-pink-300" onerror="this.src='https://via.placeholder.com/100/ffe4e6/be123c?text=MJ'">
+          <div class="flex-1">
+            <h3 class="font-bold text-pink-700 text-base">4. You Are Not Alone - MJ</h3>
+            <p class="text-xs text-slate-500">Teman saat sepi & trauma 🤍</p>
+          </div>
+          <button onclick="playSong('audio4')" class="px-3 py-2 bg-pink-500 text-white rounded-xl text-xs font-bold hover:bg-pink-600 active:scale-95">▶ Play</button>
+        </div>
+        <audio id="audio4" src="mj.mp3"></audio>
+        <div class="bg-pink-50 p-3 rounded-xl border border-pink-200 text-xs leading-relaxed text-slate-700">
+          lagu inii punya makna sendiri bagikuu sihh, aku dulu waktu habis diselingkuhin sama pas masih kena medical trauma, aku selalu nyetel lagu inii... dan aku ngerasa ditemeninn. 🥹 sama halnya ketika akuu sama kamuu sekarang, akhirnya akuu bisa bener-bener ngerasa ditemeninnn, disayangg, dan dihargai layaknya cowo yang butuh ibunya. 🥺🤍 and of coursee ini lagu juga ada maknanya buat kamuu, dari judulnya ajaa aku gabakal ngebiarin and ngerasainn apa-apa harus sendirii, apa-apa ngerasa kesepiann. 🫂💕
+        </div>
+      </div>
+
+      <!-- Song 5 -->
+      <div class="glass-card rounded-2xl p-4 flex flex-col space-y-3">
+        <div class="flex items-center gap-3">
+          <img src="araa6.png" alt="A Thousand Years" class="w-14 h-14 rounded-xl object-cover border-2 border-pink-300" onerror="this.src='https://via.placeholder.com/100/ffe4e6/be123c?text=1000+Years'">
+          <div class="flex-1">
+            <h3 class="font-bold text-pink-700 text-base">5. A Thousand Years - Christina Perri</h3>
+            <p class="text-xs text-slate-500">Sampai masa depan ✨</p>
+          </div>
+          <button onclick="playSong('audio5')" class="px-3 py-2 bg-pink-500 text-white rounded-xl text-xs font-bold hover:bg-pink-600 active:scale-95">▶ Play</button>
+        </div>
+        <audio id="audio5" src="a thousand years.mp3"></audio>
+        <div class="bg-pink-50 p-3 rounded-xl border border-pink-200 text-xs leading-relaxed text-slate-700">
+          lagu ini bagiku punya makna yang relate dan dalemm bangett siii, dan menurutku hanya cocok dipakai ketika kita udah jadian nanti, dan setelah kita... married? hehehhh. 😆 makna lagu ini bagiku adalahh ketika aku akhirnyaaa bisa dapetinn hati kamuu, dan kamu akhirnya menerima cintaaku jugaa. 🥺 dan aku rasa... ini waktu yang tepat.
+        </div>
+      </div>
+
+      <!-- Song 6 -->
+      <div class="glass-card rounded-2xl p-4 flex flex-col space-y-3">
+        <div class="flex items-center gap-3">
+          <img src="araa4.png" alt="Surat Cinta Untuk Starla" class="w-14 h-14 rounded-xl object-cover border-2 border-pink-300" onerror="this.src='https://via.placeholder.com/100/ffe4e6/be123c?text=Starla'">
+          <div class="flex-1">
+            <h3 class="font-bold text-pink-700 text-base">6. Surat Cinta Untuk Starla - Virgoun</h3>
+            <p class="text-xs text-slate-500">Surat Cinta Untuk Araa 💌</p>
+          </div>
+          <button onclick="playSong('audio6')" class="px-3 py-2 bg-pink-500 text-white rounded-xl text-xs font-bold hover:bg-pink-600 active:scale-95">▶ Play</button>
+        </div>
+        <audio id="audio6" src="virgoun.mp3"></audio>
+        <div class="bg-pink-50 p-3 rounded-xl border border-pink-200 text-xs leading-relaxed text-slate-700">
+          dari aku kecill aku sukaaa bangett sama lagu inii, dan aku bener-bener pengen lagu ini di seseorang cuman belum ada yang cocok. dan sekarang kamuu adalah orang yang tepatt buat menggambarkan relatenya lagu inii ke kamuu. 😄<br><br>
+          <em>"Teruntuk kamu, hidup dan matiku. Aku tak tahu lagi harus dengan kata apa aku menuliskannya, atau dengan kalimat apa aku mengungkapkannya. Karena untuk kesekian kalinya, kau buat aku kembali percaya akan kata CINTA. Dan benar bahwa cinta masih berkuasa di atas segalanya. Ketika hati yang rapuh ini diuji oleh materi, diuji oleh duniawi... untuk kesekian kali. Lagi, lagi, dan lagi."</em><br>
+          <span class="font-bold text-pink-600">— Hema Candra</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom Navigation Buttons -->
+  <div class="fixed bottom-0 left-0 right-0 p-4 bg-white/80 backdrop-blur-md border-t border-pink-200 flex justify-between items-center z-50">
+    <a href="index.html" class="px-4 py-2 bg-pink-100 text-pink-700 rounded-xl font-bold text-xs">⬅ Sebelumnya</a>
+    <a href="slide_karakter.html" class="px-5 py-2.5 bg-pink-500 text-white rounded-xl font-bold text-xs shadow-md hover:bg-pink-600">Berikutnya ➔</a>
+  </div>
+
+  <script>
+    function playSong(id) {
+      document.querySelectorAll('audio').forEach(a => a.pause());
+      const selectedAudio = document.getElementById(id);
+      if (selectedAudio) selectedAudio.play();
+    }
+  </script>
+  <!-- ========================================== -->
+<!-- FOOTER COPYRIGHT JOVANDEV                  -->
+<!-- ========================================== -->
+<footer class="w-full text-center py-4 text-[11px] font-semibold text-pink-400 border-t border-pink-200/60 mt-8 mb-20">
+  Crafted with 💖 by <span class="text-pink-600 font-bold tracking-wider">JovanDev.</span> &copy; 2026. All rights reserved. ✨
+</footer>
+</body>
+</html>

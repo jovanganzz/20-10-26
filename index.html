@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special for Danish Ara Adhany 💖</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Sacramento&family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <style>
+    body {
+      background: radial-gradient(circle at 50% 30%, #ffe4e6 0%, #fbcfe8 50%, #f472b6 100%);
+      font-family: 'Fredoka', 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+    .floating-heart {
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(5deg); }
+    }
+    .glass-box {
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(16px);
+      border: 2px solid rgba(255, 182, 193, 0.8);
+      box-shadow: 0 20px 40px rgba(244, 63, 94, 0.2);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 text-slate-800 relative">
+
+  <!-- Background Floating Stickers -->
+  <div class="absolute top-10 left-8 text-4xl floating-heart">🌸</div>
+  <div class="absolute top-20 right-10 text-4xl floating-heart" style="animation-delay: 1s;">🎀</div>
+  <div class="absolute bottom-12 left-12 text-4xl floating-heart" style="animation-delay: 1.5s;">💖</div>
+  <div class="absolute bottom-20 right-12 text-4xl floating-heart" style="animation-delay: 0.5s;">🧸</div>
+
+  <!-- Main Card -->
+  <main class="glass-box max-w-md w-full rounded-3xl p-8 text-center space-y-6 relative z-10">
+    <div class="inline-block px-4 py-1.5 rounded-full bg-pink-100 text-pink-600 text-xs font-bold border border-pink-300">
+      ✨ Peringatan: Khusus Danish Ara Adhany ✨
+    </div>
+
+    <div class="relative my-4 inline-block">
+      <div class="w-32 h-32 bg-pink-200 rounded-full flex items-center justify-center mx-auto shadow-inner border-4 border-white animate-pulse">
+        <span class="text-6xl">💌</span>
+      </div>
+      <span class="absolute bottom-0 right-0 text-2xl">✨</span>
+    </div>
+
+    <h1 class="text-3xl font-bold text-pink-600 font-serif">Haiii Araaa... 🎀</h1>
+    <p class="text-sm text-slate-600 leading-relaxed">
+      Akhirnya kita sampai juga di titik inii. Sebelum kamuu buka, senyum dulu dong biar makin cantikkk!! >.< ✨
+    </p>
+
+    <a href="slide1.html" onclick="triggerConfetti()" class="inline-flex items-center justify-center gap-2 w-full py-4 bg-gradient-to-r from-pink-400 to-rose-500 hover:from-pink-500 hover:to-rose-600 text-white font-bold rounded-2xl shadow-lg shadow-pink-300 transition-all transform active:scale-95 text-base">
+      <span>Buka Surat Confess ✨</span>
+      <span>➔</span>
+    </a>
+  </main>
+
+  <footer class="mt-6 text-xs text-pink-900 font-semibold">
+    Dibuat dengan ❤️ Tulus
+  </footer>
+
+  <script>
+    function triggerConfetti() {
+      if (typeof confetti === 'function') {
+        confetti({ particleCount: 50, spread: 60, origin: { y: 0.7 }, colors: ['#f43f5e', '#fbcfe8', '#fda4af'] });
+      }
+    }
+  </script>
+  <!-- ========================================== -->
+<!-- FOOTER COPYRIGHT JOVANDEV                  -->
+<!-- ========================================== -->
+<footer class="w-full text-center py-4 text-[11px] font-semibold text-pink-400 border-t border-pink-200/60 mt-8 mb-20">
+  Crafted with 💖 by <span class="text-pink-600 font-bold tracking-wider">JovanDev.</span> &copy; 2026. All rights reserved. ✨
+</footer>
+</body>
+</html>
